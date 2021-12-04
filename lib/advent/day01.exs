@@ -2,7 +2,7 @@ data = Advent.stream_data!("day01")
 
 depths =
   for line <- data,
-  do: line |> String.trim() |> String.to_integer()
+      do: line |> String.trim() |> String.to_integer()
 
 depths
 |> Enum.chunk_every(2, 1, :discard)
